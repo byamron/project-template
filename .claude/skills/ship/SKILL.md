@@ -40,7 +40,20 @@ If the user gave feedback during this session that isn't already captured:
   - Short title (under 70 characters)
   - Body with `## Summary` (1-3 bullets) and `## Test plan` (checklist)
 
-## 5. Merge
+## 5. Handle conflicts (if any)
+
+If the push or merge fails due to conflicts:
+
+1. **Surface the conflict clearly.** Show which files conflict and a brief explanation of why (e.g., "main has new commits that touch the same lines your branch changed").
+2. **Present options:**
+   - **Rebase onto target branch** -- rewrites your commits on top of the latest target. Best when: your branch has a small number of clean commits you want to preserve individually.
+   - **Merge target into your branch** -- creates a merge commit. Best when: you want to preserve exact branch history or the rebase would be complex.
+   - **Abort and let the user resolve manually** -- safest when conflicts look non-trivial or touch critical code.
+3. **Recommend the best option** based on the situation (number of commits, conflict complexity, whether the files are safety-critical).
+4. **Wait for user approval** before resolving. Never force-push or auto-resolve conflicts without confirmation.
+5. After resolution, re-push and verify the PR is clean before proceeding.
+
+## 6. Merge
 
 - Ask the user how to merge if not obvious from project conventions (squash, merge commit, rebase)
 - Ask which branch to merge into if the project uses a staging/integration branch before main
