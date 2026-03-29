@@ -42,31 +42,3 @@ Use `/clear` between agent phases to keep context small.
 **Feedback iteration (user corrects implementation):**
 1. UI/Domain Agent: apply the corrected approach
 2. Docs Agent: document feedback in feedback.md, update history.md
-
-## Context Management
-
-- **`/clear`** between agent phases and unrelated tasks
-- **`/compact <focus>`** to keep relevant context while shedding noise
-- **Specify files** -- each task should use 1 agent spec + plan.md + 1-5 code files
-- **Skills load on-demand** -- use `/ship` or `/audit` instead of remembering workflows
-
-## Documentation Is Part of "Done"
-
-A feature is not complete until:
-- `plan.md` is updated (mark completed items, update roadmap)
-- `history.md` has a detailed entry (what, why, tradeoffs, decisions, branch+SHA)
-- `feedback.md` captures any user corrections from the session
-
-Update docs **before** committing, not after.
-
-## 9-Step Development Process
-
-1. **Clarify** -- ask questions about the request to ensure understanding
-2. **Plan** -- design the approach before coding
-3. **Execute** -- build the feature/fix
-4. **Review** -- test and verify the implementation
-5. **Present** -- show changes and explain key decisions
-6. **Iterate** -- implement feedback
-7. **Document** -- update plan.md, history.md, feedback.md
-8. **Reflect** -- capture any problems or lessons learned
-9. **Commit** -- push changes with descriptive message
