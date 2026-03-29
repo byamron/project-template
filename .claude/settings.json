@@ -1,15 +1,5 @@
 {
   "hooks": {
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "prompt",
-            "prompt": "Check if the conversation involved code changes (file edits, new files, or bug fixes). If yes, check whether core-docs/history.md or core-docs/plan.md were also updated in this conversation. Return {\"ok\": true} if documentation was updated or if no code changes were made. Return {\"ok\": false, \"reason\": \"Code was changed but core-docs were not updated. Documentation is part of done -- update history.md and plan.md before committing.\"} if code changed but docs weren't touched."
-          }
-        ]
-      }
-    ],
     "PreToolUse": [
       {
         "matcher": "Edit|Write",
