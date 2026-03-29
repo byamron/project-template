@@ -112,32 +112,6 @@ project/
 
 Use `/clear` between phases to keep context small. Each agent reads only the files it needs.
 
-## Setup for a New Project
-
-### Option A: Using `/init-project` (recommended)
-
-If the personal skill is installed at `~/.claude/skills/init-project/`:
-
-1. Create your project directory and `cd` into it
-2. Run `git init`
-3. Open Claude Code and run `/init-project`
-4. It copies the template, interviews you to populate project-specific files, and offers to make the initial commit
-
-### Option B: Manual copy + `/setup`
-
-1. Copy this template into your project: `rsync -av --exclude='.git' --exclude='README.md' ~/Desktop/coding/project-template/ ./`
-2. Open Claude Code in the project
-3. Run `/setup` -- it walks through the same interview to populate project-specific files
-4. Delete this README (or replace with your project's README)
-
-### Option C: Fully manual
-
-1. Copy the template files
-2. Find all `<!-- SETUP: ... -->` comments in CLAUDE.md, spec.md, and design-language.md
-3. Replace the placeholder content with your project details
-4. Update `paths:` in `.claude/rules/ui.md` and `.claude/rules/safety.md` to match your project structure
-5. Remove leftover SETUP comments
-
 ## Optional: Personal `/init-project` Skill
 
 For faster project setup, you can create a personal skill that copies this template into any directory and runs the interactive setup in one step.
@@ -168,6 +142,32 @@ Then run /setup to populate the project-specific files.
 4. Update the `rsync` path to wherever you cloned this repo.
 
 Now you can `cd` into any new project directory and run `/init-project` to get the full template + interactive setup.
+
+## Setup for a New Project
+
+### Option A: Using `/init-project` (recommended)
+
+If the personal skill is installed (see above):
+
+1. Create your project directory and `cd` into it
+2. Run `git init`
+3. Open Claude Code and run `/init-project`
+4. It copies the template, interviews you to populate project-specific files, and offers to make the initial commit
+
+### Option B: Manual copy + `/setup`
+
+1. Copy this template into your project: `rsync -av --exclude='.git' --exclude='README.md' ~/path/to/project-template/ ./`
+2. Open Claude Code in the project
+3. Run `/setup` -- it walks through the same interview to populate project-specific files
+4. Delete this README (or replace with your project's README)
+
+### Option C: Fully manual
+
+1. Copy the template files
+2. Find all `<!-- SETUP: ... -->` comments in CLAUDE.md, spec.md, and design-language.md
+3. Replace the placeholder content with your project details
+4. Update `paths:` in `.claude/rules/ui.md` and `.claude/rules/safety.md` to match your project structure
+5. Remove leftover SETUP comments
 
 ---
 
