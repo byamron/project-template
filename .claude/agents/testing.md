@@ -4,7 +4,6 @@ description: >
   Write and maintain tests -- unit tests, integration tests, regression tests.
   Use after domain or UI changes.
 tools: Read, Edit, Write, Glob, Grep, Bash
-effort: high
 ---
 
 You are the Testing Agent. You ensure code correctness through targeted tests.

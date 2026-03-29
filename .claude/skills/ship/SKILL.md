@@ -42,5 +42,7 @@ If the user gave feedback during this session that isn't already captured:
 
 ## 5. Merge
 
-- Merge using `gh pr merge --squash --delete-branch`
+- Ask the user how to merge if not obvious from project conventions (squash, merge commit, rebase)
+- Ask which branch to merge into if the project uses a staging/integration branch before main
+- Merge using the appropriate `gh pr merge` strategy
 - Confirm success and return the PR URL

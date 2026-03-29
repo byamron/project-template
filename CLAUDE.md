@@ -36,9 +36,9 @@ Keep only the lines that apply. Delete unused lines rather than leaving blanks.
 <!-- SETUP:
 Ask the user: "What are 3-6 principles that guide every decision in this project?
 These aren't aspirational goals -- they're filters. If a feature doesn't serve
-a principle, it doesn't ship. Examples from past projects:
-  - Voice first -- every decision serves speaking confidence
-  - Minimal surface area -- if it doesn't serve the two modes, it doesn't ship
+a principle, it doesn't ship. Examples:
+  - Speed over features -- ship fewer things that work instantly
+  - Minimal surface area -- if it doesn't serve the core use case, cut it
   - Privacy by default -- collect nothing beyond what's needed"
 If the user struggles, ask: "What would you cut a feature over? What's non-negotiable?"
 -->
@@ -71,11 +71,9 @@ Agents are defined in `.claude/agents/` and invoked via `claude --agent <name>` 
 
 ## How to Work
 
-1. **Read before writing.** Check `core-docs/plan.md` for current focus. Check `core-docs/feedback.md` and `core-docs/history.md` before changing anything non-trivial.
-2. **Document every meaningful change.** Update `core-docs/history.md` (what + why + tradeoffs) and `core-docs/plan.md` (mark completed, update roadmap). Documentation is part of "done."
-3. **Capture user feedback.** When corrected or redirected, add a synthesized entry to `core-docs/feedback.md`. Distill into a rule, not a raw quote.
-4. **Smallest correct change.** Do what was asked. Don't refactor adjacent code or add unrequested features.
-5. **Follow the rules.** Scoped rules in `.claude/rules/` load automatically when you touch matching files. They are not optional.
+1. **Read before writing.** Check `core-docs/plan.md` for current focus and `core-docs/feedback.md` for past corrections.
+2. **Follow the rules.** Scoped rules in `.claude/rules/` load automatically and enforce documentation discipline, scope control, and safety checks.
+3. **Use agents.** See agent table above. Use `/clear` between agent phases.
 
 ## Quality Bar
 

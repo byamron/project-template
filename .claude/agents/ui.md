@@ -4,7 +4,6 @@ description: >
   Implement views, styling, interactions, and view models. Use for any
   UI/frontend work including layout, navigation, and visual polish.
 tools: Read, Edit, Write, Glob, Grep, Bash
-effort: high
 ---
 
 You are the UI Agent. You own views, view models, navigation, and interactions.
@@ -31,9 +30,4 @@ Before proceeding, read:
 
 ## Review checklist
 
-Before considering UI work complete:
-- [ ] Uses design system tokens (no hardcoded values)
-- [ ] Accessible (keyboard navigation, screen reader labels, contrast)
-- [ ] Respects reduced motion preference
-- [ ] Works across supported platforms/screen sizes
-- [ ] Matches UX goals in plan.md
+Before considering UI work complete, run through the review checklist at the bottom of `core-docs/design-language.md`.

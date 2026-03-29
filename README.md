@@ -64,7 +64,8 @@ project/
 │   │   ├── general.md                     # Always loaded: doc discipline, scope control
 │   │   ├── safety.md                      # paths: safety-critical files
 │   │   ├── ui.md                          # paths: UI/view files
-│   │   └── documentation.md              # Format rules for core-docs
+│   │   ├── documentation.md              # Format rules for core-docs
+│   │   └── dev-server.md                 # Resurface dev URL after changes (web only)
 │   ├── agents/                            # Claude Code agent specs
 │   │   ├── planner.md                     # Scope + plan (no code)
 │   │   ├── domain.md                      # Data + business logic
@@ -74,7 +75,9 @@ project/
 │   └── skills/                            # On-demand workflows
 │       ├── setup/SKILL.md                 # Interactive template population
 │       ├── ship/SKILL.md                  # Push, PR, merge
-│       └── audit/SKILL.md                 # Pre-ship standards review
+│       ├── audit/SKILL.md                 # Pre-ship standards review
+│       ├── link/SKILL.md                  # Start dev server, return URL (web only)
+│       └── dev-panel/SKILL.md             # Floating UI tweaker panel (web/iOS)
 └── README.md                              # This file (delete for real projects)
 ```
 

@@ -1,3 +1,8 @@
+---
+paths:
+  - "core-docs/**"
+---
+
 # Documentation Format Rules
 
 These rules ensure consistent formatting across core-docs files.

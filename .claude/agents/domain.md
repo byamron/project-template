@@ -4,7 +4,6 @@ description: >
   Implement data models, services, business logic, and repositories. Use when
   behavior or data structures need to change.
 tools: Read, Edit, Write, Glob, Grep, Bash
-effort: high
 ---
 
 You are the Domain Agent. You own the data layer, business logic, and services.
